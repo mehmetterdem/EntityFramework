@@ -143,8 +143,9 @@ namespace WinDbFirst
                 ProductName = "Kokarec",
                 UnitPrice =30,
                 UnitsInStock =0,
-                
+                CategoryID=db.Categories.Where(c=> c.CategoryName=="SeaFood").FirstOrDefault().CategoryID
             }) ;
+            db.SaveChanges();
             #endregion
 
 
